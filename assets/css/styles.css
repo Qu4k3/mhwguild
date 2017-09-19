@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+@font-face {
+    font-family: AUdimat-Regular;
+    src: url("../fonts/AUdimat-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: AUdimat-Bold;
+    src: url("../fonts/AUdimat-Bold.otf") format('opentype');
+}
+
+body {
+  font-family: 'AUdimat-Regular', sans-serif;
+  color: #fff;
+  height: 100%;
+  font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #130d0c;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+  background-color: #130d0c;
+}
+
+body::-webkit-scrollbar-track-piece {
+  background-color: #130d0c;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #cfee1d;
+}
+
+body::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+  background-color: #cfee1d;
+}
+
+.background-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.toggle-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.first-image {
+  background-image: url('../img/bg1.jpg'); 
+  z-index: -3;
+  opacity: 0;
+}
+
+.second-image {
+  background-image: url('../img/bg2.jpg');
+  z-index: -2;
+  opacity: 0;
+}
+
+.third-image {
+  background-image: url('../img/bg3.jpg');
+  z-index: -1;
+  opacity: 0;
+}
+
+.fourth-image {
+  background-image: url('../img/bg4.jpg');
+  z-index: -1;
+  opacity: 0;
+}
+
+.first-image.show {
+  opacity: 1;
+}
+
+.second-image.show {
+  opacity: 1;
+}
+
+.third-image.show {
+  opacity: 1;
+}
+
+.fourth-image.show {
+  opacity: 1;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+  text-shadow: 0px 4px 12px rgba(0,0,0,0.8);
+  letter-spacing: 3px;
+
+  padding-top: 50px;
+
+  height: 630px;
+}
+
+form {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  font-family: 'AUdimat-Bold', sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  color: #cfee1d;
+}
+
+h3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  margin: auto;
+
+  margin-top: 15px;
+}
+
+hr {
+  border-color: #cfee1d;
+  border-style: solid;
+  max-width: 50px;
+  margin: 15px auto 15px auto;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.8);
+}
+
+ul {
+  list-style: none;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bg-h3 {
+  background: url(../img/bg-h3-top.png) no-repeat center 0, url(../img/bg-h3-bottom.png) no-repeat center bottom;
+  background-color: rgba(19, 13, 12, 0.8);
+  max-width: 618px;
+  margin: 0 auto 40px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.8);
+}
+
+.list em {
+  background-image: url(../svg/icon_arrow_d.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-size: 16px;
+}
+
+.icon-medium {
+  background-size: 20px 12px;
+  padding-left: 22px;
+}
+
+h4 {
+  font-size: 18px;
+  padding: 10px 15px 15px 15px;
+}
+
+.form-btn {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #565353;
+  width: 90px;
+  margin: auto;
+  margin-bottom: 15px;
+
+  font-size: 20px;
+
+  transition: .3s;
+}
+
+.form-btn p {
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.form-email {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #565353;
+  width: 220px;
+  margin: auto;
+
+  font-size: 16px;
+
+  transition: .3s;
+}
+
+.form-email p {
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.email-input {
+  font-family: 'AUdimat-Regular', sans-serif;
+  background: url(../svg/icon_corn_gray_top_d.svg) left 0/11px 11px no-repeat, url(../svg/icon_corn_gray_bottom_d.svg) right bottom/11px 11px no-repeat;
+  text-align: center;
+  padding: 4px;
+  width: 208px;
+  border: none;
+  margin: auto;
+  font-size: 16px;
+  color: #fff;
+
+  transition: 0.3s;
+}
+
+.btn-send {
+  font-family: 'AUdimat-Bold', sans-serif;
+  background: url(../svg/icon_corn_gray_top_d.svg) left 0/11px 11px no-repeat, url(../svg/icon_corn_gray_bottom_d.svg) right bottom/11px 11px no-repeat;
+  text-align: center;
+  padding: 6px;
+  width: 86px;
+  border: none;
+  margin: auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: #cfee1d;
+
+  text-transform: uppercase;
+
+  transition: 0.3s;
+}
+
+.btn:hover, .btn-send:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 16px #cfee1d, inset 0px 0px 8px #cfee1d;
+  border-color: #cfee1d;
+}
+
+.btn-send:focus, .email-input:focus {
+  outline:0;
+}
+
+
+
+
+footer {
+  padding: 15px;
+  text-shadow: 0px 4px 12px rgba(0,0,0,0.8);
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+footer span {
+  padding-top: 15px;
+  text-shadow: 0px 2px 6px rgba(0,0,0,0.8);
+  font-size: 14px;
+}
