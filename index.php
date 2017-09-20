@@ -18,17 +18,9 @@
 
   <link rel="shortcut icon" href="assets/img/mhw.jpg"/>
 
+  <link rel="stylesheet" type="text/css" href="assets/css/swal.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/f-a.min.css">
   <link href="assets/css/styles.css" type="text/css" rel="stylesheet"/>
-
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106768518-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-
-    gtag('config', 'UA-106768518-1');
-  </script>
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,7 +44,7 @@
 
   <section class="center">
     
-    <div class="bg-h3">
+    <div class="bg-h3" style="margin-top:75px;">
       <h1>MHW GUILD</h1>
     
       <h3>Coming up next year</h3>
@@ -66,21 +58,21 @@
         <li><em class="icon-medium">Maps & item location</em></li>
       </ul>
 
-      <em style="font-size: 16px;">And more...</em>
+      <em style="font-size: 16px;">and more...</em>
 
       <hr>
 
       <img class="img-responsive" src="assets/img/waiting.gif" alt="">
-    </div>
+    </div>    
 
-    <div class="bg-h3">
+    <div class="bg-h3">      
 
       <h4>Get notified when the platform comes up !</h4>
-      <form action="">
+      <form method="POST" action="" accept-charset="UTF-8">
         
         <div class="form-email">
           <p>
-            <input class="email-input" type="email" name="email" placeholder="Enter your email" required>
+            <input class="email-input" type="email" name="inputEmail" placeholder="Enter your email" required>
           </p>
         </div>
 
@@ -88,7 +80,7 @@
         
         <div class="form-btn">
           <p>
-            <input class="btn-send" type="submit" value="Send">
+            <input class="btn-send" name="send" type="submit" value="Send">
           </p>
         </div>
 
@@ -96,17 +88,39 @@
     </div>  
 
     <footer>
-    MHW Guild &copy; 2017 | All rights reserved
+      <ul>
+        <li><a class="social-icon facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="social-icon twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="social-icon instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+      <br><br>
+    MHW Guild &copy; 2017 | All rights reserved | <a href="mailto:info@mhwguild.com">info@mhwguild.com</a>
     <!--<br>
     <span>Not associated with &copy;CAPCOM</span>-->
     </footer>  
 
   </section>
 
-  
+  <script src="assets/js/swal.min.js"></script>
+  <script type="text/javascript">
+    function valid() {                      
+      swal({
+        title: "You have signed up correctly",
+        type: "success"
+      });
+    }
+
+    function registrat() {
+      swal({
+        title: "You are already registered",
+        type: "warning"
+      });
+    }
+  </script>
+  <?php include 'private/conn.php' ?>  
 
   <script src="assets/js/jq.min.js" type="application/javascript"></script>
-  <script src="assets/js/main.js" type="application/javascript"></script>
+  <script src="assets/js/main.js" type="application/javascript"></script>  
 
 </body>
 </html>
