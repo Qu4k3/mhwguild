@@ -53,7 +53,7 @@
       
       <ul class="list">
         <li><em class="icon-medium">Community forum</em></li>
-        <li><em class="icon-medium">Monster list & drops</em></li>
+        <li><em class="icon-medium">Monster list & loot</em></li>
         <li><em class="icon-medium">Weapon types stats & builds</em></li>
         <li><em class="icon-medium">Maps & item location</em></li>
       </ul>
@@ -89,9 +89,9 @@
 
     <footer>
       <ul>
-        <li><a class="social-icon facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a class="social-icon twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a class="social-icon instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a class="social-icon facebook" href="https://www.facebook.com/mhwguild/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="social-icon twitter" href="https://twitter.com/mhwguild"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="social-icon instagram" href="https://www.instagram.com/mhwguild/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
       </ul>
       <br><br>
     MHW Guild &copy; 2017 | All rights reserved | <a href="mailto:info@mhwguild.com">info@mhwguild.com</a>
